@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Process">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="transaction" type="tns:PaymentTransaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="PaymentTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="TransactionID" type="xs:int" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TransactionAmount" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="PaymentAmount" type="xs:double" />
+      <xs:element minOccurs="1" maxOccurs="1" name="TenderType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ProcessResult" type="tns:ProcessResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ProcessResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Result" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Reason" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessBatch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="transactions" type="tns:ArrayOfPaymentTransaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfPaymentTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentTransaction" nillable="true" type="tns:PaymentTransaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessBatchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="ProcessBatchResult" type="tns:ArrayOfProcessResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfProcessResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProcessResult" nillable="true" type="tns:ProcessResult" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
