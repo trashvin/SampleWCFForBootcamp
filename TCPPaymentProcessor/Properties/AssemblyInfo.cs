@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HTTPServiceTester")]
+[assembly: AssemblyTitle("TCPPaymentProcessor")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HTTPServiceTester")]
+[assembly: AssemblyProduct("TCPPaymentProcessor")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("65a7a030-7567-437f-9ab8-2dfc6acd8a96")]
+[assembly: Guid("d2315a6c-643a-4e74-b68f-03871c2f7a4a")]
 
 // Version information for an assembly consists of the following four values:
 //

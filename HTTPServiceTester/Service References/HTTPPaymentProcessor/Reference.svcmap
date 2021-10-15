@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="972ff329-028f-4e12-9156-ec8a2b862c82" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50264/HTTPPaymentProcessor.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HTTPPaymentProcessor.disco" MetadataType="Disco" ID="7996cec8-b0be-4cef-8228-799b1527bb72" SourceId="1" SourceUrl="http://localhost:50264/HTTPPaymentProcessor.svc?disco" />
+    <MetadataFile FileName="HTTPPaymentProcessor.xsd" MetadataType="Schema" ID="9beddc39-20b9-4918-a76b-2c516f2e9356" SourceId="1" SourceUrl="http://localhost:50264/HTTPPaymentProcessor.svc?xsd=xsd0" />
+    <MetadataFile FileName="HTTPPaymentProcessor1.xsd" MetadataType="Schema" ID="50d6443f-7be9-4941-8603-8df668d74ac8" SourceId="1" SourceUrl="http://localhost:50264/HTTPPaymentProcessor.svc?xsd=xsd2" />
+    <MetadataFile FileName="HTTPPaymentProcessor.wsdl" MetadataType="Wsdl" ID="cfd25f3c-a427-4e27-bed2-2efb9c0e6f95" SourceId="1" SourceUrl="http://localhost:50264/HTTPPaymentProcessor.svc?wsdl" />
+    <MetadataFile FileName="HTTPPaymentProcessor2.xsd" MetadataType="Schema" ID="1fa808ba-9d88-4332-9199-ca2a24fd90bc" SourceId="1" SourceUrl="http://localhost:50264/HTTPPaymentProcessor.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

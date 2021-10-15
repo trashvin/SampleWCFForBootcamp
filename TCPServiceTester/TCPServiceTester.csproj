@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B8C87DC-4BA5-450A-9F3B-D8A8507D92D9}</ProjectGuid>
+    <ProjectGuid>{12070ACF-5052-4E21-AA7E-70AEE9CD983F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HTTPServiceTester</RootNamespace>
-    <AssemblyName>HTTPServiceTester</AssemblyName>
+    <RootNamespace>TCPServiceTester</RootNamespace>
+    <AssemblyName>TCPServiceTester</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\HTTPPaymentProcessor\Reference.cs">
+    <Compile Include="Service References\TCPPaymentService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -54,17 +54,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor.wsdl" />
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor.xsd">
+    <None Include="Service References\TCPPaymentService\service.wsdl" />
+    <None Include="Service References\TCPPaymentService\service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor1.xsd">
+    <None Include="Service References\TCPPaymentService\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor2.xsd">
+    <None Include="Service References\TCPPaymentService\TCPPaymentProcessor.Model.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPServiceTester.HTTPPaymentProcessor.ProcessResult.datasource">
+    <None Include="Service References\TCPPaymentService\TCPServiceTester.TCPPaymentService.ProcessResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
   </ItemGroup>
@@ -72,19 +72,16 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\HTTPPaymentProcessor\" />
+    <WCFMetadataStorage Include="Service References\TCPPaymentService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor.disco" />
+    <None Include="Service References\TCPPaymentService\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\configuration91.svcinfo" />
+    <None Include="Service References\TCPPaymentService\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\Reference.svcmap">
+    <None Include="Service References\TCPPaymentService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

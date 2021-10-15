@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B8C87DC-4BA5-450A-9F3B-D8A8507D92D9}</ProjectGuid>
+    <ProjectGuid>{0078DE59-9E67-48A2-B50D-1D51AB470C51}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HTTPServiceTester</RootNamespace>
-    <AssemblyName>HTTPServiceTester</AssemblyName>
+    <RootNamespace>TCPPaymentProcessor</RootNamespace>
+    <AssemblyName>TCPPaymentProcessor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -37,6 +37,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,50 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="IPaymentProcessor.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\HTTPPaymentProcessor\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
+    <Compile Include="TCPPaymentProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor.wsdl" />
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPServiceTester.HTTPPaymentProcessor.ProcessResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\HTTPPaymentProcessor\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\HTTPPaymentProcessor.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\HTTPPaymentProcessor\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
